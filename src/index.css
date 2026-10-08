@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Hanken Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --color-paper: #fbfaf7;
+  --color-canvas: #f4f2ed;
+  --color-line: #e5e1d8;
+  --color-line-strong: #cfcac0;
+  --color-ink: #1f1f1d;
+  --color-black: #111110;
+  --color-muted: #6b6860;
+  --color-subtle: #8f8b82;
+  --color-brand: #1e4d3f;
+  --color-brand-deep: #163a30;
+  --color-brand-tint: #e7eee9;
+  --color-danger: #a33a2b;
+  --color-success: #2f6b4f;
+
+  --text-display: 3.5rem;
+  --text-display--line-height: 1.04;
+  --text-display--letter-spacing: -0.03em;
+  --text-display--font-weight: 600;
+
+  --text-page: 2.5rem;
+  --text-page--line-height: 1.1;
+  --text-page--letter-spacing: -0.025em;
+  --text-page--font-weight: 600;
+
+  --text-section: 1.75rem;
+  --text-section--line-height: 1.2;
+  --text-section--letter-spacing: -0.018em;
+  --text-section--font-weight: 600;
+
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.6;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.65;
+
+  --text-meta: 0.875rem;
+  --text-meta--line-height: 1.5;
+
+  --text-label: 0.8125rem;
+  --text-label--line-height: 1.4;
+  --text-label--font-weight: 500;
+
+  --text-button: 0.9375rem;
+  --text-button--line-height: 1;
+  --text-button--font-weight: 600;
+
+  --radius-control: 6px;
+  --radius-surface: 10px;
+
+  --shadow-raised: 0 1px 2px rgb(17 17 16 / 0.05), 0 4px 14px rgb(17 17 16 / 0.05);
+  --shadow-overlay: 0 12px 40px rgb(17 17 16 / 0.16);
+
+  --breakpoint-xs: 30rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button, [role='button'], a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-brand);
+    color: var(--color-paper);
+  }
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --text-display: 4.5rem;
+    --text-page: 3.25rem;
+    --text-section: 2.125rem;
+    --text-lead: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media (max-width: 63.999rem) {
+  body.has-sticky-cta footer {
+    padding-bottom: 4.5rem;
+  }
+}

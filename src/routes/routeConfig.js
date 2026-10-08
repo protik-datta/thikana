@@ -1,0 +1,92 @@
+export const APP_ROUTES = [
+  {
+    path: 'favorites',
+    title: 'Saved properties',
+    phase: 5,
+    description: 'The properties you have saved, in one place.',
+  },
+  {
+    path: 'compare',
+    title: 'Compare properties',
+    phase: 5,
+    description: 'Compare up to three properties side by side.',
+  },
+  {
+    path: 'locations',
+    title: 'Locations',
+    phase: 6,
+    description: 'Explore neighbourhoods across Dhaka and Chattogram, with price ranges and available listings.',
+  },
+  {
+    path: 'locations/:slug',
+    title: 'Location guide',
+    phase: 6,
+    description: 'Property types, price ranges and listings in this neighbourhood.',
+  },
+  {
+    path: 'agents',
+    title: 'Agents',
+    phase: 6,
+    description: 'Meet the verified agents who list and manage property with us.',
+  },
+  {
+    path: 'agents/:slug',
+    title: 'Agent profile',
+    phase: 6,
+    description: 'Experience, specialties and current listings for this agent.',
+  },
+  {
+    path: 'sell',
+    title: 'List your property',
+    phase: 6,
+    description: 'Submit your property for review and listing.',
+  },
+  {
+    path: 'guides',
+    title: 'Guides',
+    phase: 7,
+    description: 'Practical guides on buying, renting and selling property in Bangladesh.',
+  },
+  {
+    path: 'mortgage-calculator',
+    title: 'Mortgage calculator',
+    phase: 7,
+    description: 'Estimate your monthly payment, total interest and total cost for a home loan.',
+  },
+  {
+    path: 'account',
+    title: 'Your account',
+    phase: 7,
+    description: 'Your profile, saved properties and preferences.',
+  },
+  {
+    path: 'account/inquiries',
+    title: 'Your inquiries',
+    phase: 7,
+    description: 'Messages you have sent to agents.',
+  },
+  {
+    path: 'account/viewings',
+    title: 'Your viewings',
+    phase: 7,
+    description: 'Viewing requests you have made.',
+  },
+  {
+    path: 'about',
+    title: 'About us',
+    phase: 7,
+    description: 'Who we are and how we verify every listing.',
+  },
+  {
+    path: 'contact',
+    title: 'Contact us',
+    phase: 7,
+    description: 'Speak to our team about buying, renting or selling.',
+  },
+  {
+    path: 'faq',
+    title: 'Frequently asked questions',
+    phase: 7,
+    description: 'Answers to common questions about listings, viewings and the inquiry process.',
+  },
+]
